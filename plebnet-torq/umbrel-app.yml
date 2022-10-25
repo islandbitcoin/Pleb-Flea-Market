@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: plebnet-torq
+name: Torq
+tagline: Capital management for routing nodes
+icon: https://raw.githubusercontent.com/lncapital/torq-docs/ee672a8ef82e06ac85023299e6330bade3587563/static/img/logo-ln-new.svg
+category: Lightning
+version: "0.9.0"
+port: 3009
+description: >-
+  Torq by LN.capital
+
+  Torq is a capital management tool for routing nodes on the lightning network.
+
+developer: LN.capital
+website: https://ln.capital/
+submitter: Dread
+submission: https://github.com/islandbitcoin/plebnet-torq
+repo: https://github.com/lncapital/torq
+support: ttps://github.com/lncapital/torq/issues
+gallery:
+  - https://github.com/lncapital/torq/blob/main/Torq-Events.png
+  - https://github.com/lncapital/torq/blob/main/forwards-summary.png
+  - https://github.com/lncapital/torq/blob/main/forwards-table.png
+releaseNotes: >-
+  - Initial Release to Pleb Flea Market, an Umbrel Community App Store.
+dependencies:
+  - lightning
+path: ""
+defaultUsername: ""
+defaultPassword: "moneyprintergobrrr"

@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: plebnet-torq_1
+      APP_PORT: 3009
+  torq:
+    image: "lncapital/torq:latest"
+    restart: on-failure
+    depends_on:
+      - "db"
+    command:
+      - --db.host
+      - db
+      - --db.password
+      - password123 # Must match db password below
+      - --torq.password
+      - moneyprintergobrrr # Set password here to connect to login to the web ui
+      - --torq.port
+      - "3009"
+      - start
+    ports:
+      - "3009:3009"
+  db:
+    image: "timescale/timescaledb:latest-pg14"
+    environment:
+      POSTGRES_PASSWORD: password123 # Must match db password set above
+    volumes:
+      - torq_db:/var/lib/postgresql/data
+volumes:
+  torq_db:
