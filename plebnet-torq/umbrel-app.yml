@@ -2,7 +2,7 @@ manifestVersion: 1
 id: plebnet-torq
 name: Torq
 tagline: Capital management for routing nodes
-icon: https://raw.githubusercontent.com/lncapital/torq-docs/ee672a8ef82e06ac85023299e6330bade3587563/static/img/logo-ln-new.svg
+icon: https://raw.githubusercontent.com/lncapital/torq-docs/ee672a8ef82e06ac85023299e6330bade3587563/static/img/logo.svg
 category: Lightning
 version: "0.9.0"
 port: 3009
